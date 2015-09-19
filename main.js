@@ -23,3 +23,9 @@ var firebaseURL = new Firebase("htnb.firebaseIO.com");
 var fbgraph = require("fbgraph");
 fbgraph.setAccessToken("1504a2c742c5b1637f23d76149f3d2ec");
 fbgraph.setAppSecret("cd469f6e7d257a0b6b4354958f48b2be");
+
+var options = {
+    timeout:  3000
+  , pool:     { maxSockets:  Infinity }
+  , headers:  { connection:  "keep-alive" }
+};
